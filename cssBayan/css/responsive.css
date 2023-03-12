@@ -1,4 +1,7 @@
 @media (min-width: 320px) {
+    body {
+        font-family: Roboto, Noto, sans-serif;
+    }
     .container {
         margin: 0 auto;
         padding: 0 1rem;
@@ -40,43 +43,78 @@
     .accordion__img {
         max-height: 0;
         width: 100%;
-        transition: max-height 0.3s ease-out;
+        transition: max-height 0.5s ease-out;
     }
     .accordion__input {
         display: none;
     }
     .accordion__input:checked ~ .accordion__img {
         max-height: 60rem;
-        transition: max-height 0.3s ease-in;
+        transition: max-height 0.5s ease-in;
     }
     .accordion__label {
-        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
     }
-    .accordion__input:checked + .accordion__header .accordion__open-icon {
+    .accordion__input:checked + .accordion__header .accordion__open-icon, .accordion__input:hover + .accordion__header .accordion__open-icon {
         display: none;
     }
-    .accordion__input:checked + .accordion__header .accordion__close-icon {
+    .accordion__input:checked + .accordion__header .accordion__close-icon, .accordion__input:hover + .accordion__header .accordion__close-icon {
         display: block;
     }
 }
 @media (min-width: 820px) {
+    body {
+        font-family: Roboto, Noto, sans-serif;
+    }
     .container {
         padding: 0 2.5rem;
     }
     .heading {
-        font-size: 3.8rem;
+        font-size: 3.5rem;
     }
     .accordion__heading {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }   
     .accordion__icon {
         font-size: 3.5rem;
     }
     .accordion__label {
-        margin-bottom: 3rem;
+        padding-bottom: 3rem;
     }
     .accordion__img {
         max-width: 90%;
         margin: 0 auto;
     }
+}
+@media (min-width: 1880px) {
+    body {
+        font-family: Comic Sans MS, cursive;
+    }
+    .container {
+        max-width: 80rem;
+        padding: 0 1rem;
+    }
+    .heading {
+        font-size: 2.8rem;
+    }
+    .accordion__heading {
+        font-size: 1.8rem;
+    }   
+    .accordion__icon {
+        font-size: 2.8rem;
+    }
+    .accordion__label {
+        padding-bottom: 3rem;
+    }
+    .accordion__img {
+        max-width: 37%;
+    }
+    .accordion__input:not(:hover) ~ .accordion__img {
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+      }
+      .accordion__input:hover ~ .accordion__img,  .accordion__input:checked ~ .accordion__img{
+        max-height: 60rem;
+        transition: max-height 0.5s ease-in;
+      }
 }
