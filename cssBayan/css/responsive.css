@@ -71,44 +71,12 @@
     }   
     .accordion__icon {
         font-size: 3.5rem;
-        transition: transform 0.5s ease;
-    }
-    .accordion__item {
-        border-top: 0.1rem solid #d1d1d1;
     }
     .accordion__label {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        cursor: pointer;
         margin-bottom: 3rem;
-    }
-    .accordion__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-    }
-    .accordion__close-icon {
-        display: none;
     }
     .accordion__img {
         max-width: 90%;
-        max-height: 0;
         margin: 0 auto;
-        transition: max-height 0.3s ease-out;
-    }
-    .accordion__input {
-        display: none;
-    }
-    .accordion__input:checked ~ .accordion__img {
-        max-height: 60rem;
-        transition: max-height 0.3s ease-in;
-    }
-    .accordion__input:checked + .accordion__header .accordion__open-icon {
-        display: none;
-    }
-    .accordion__input:checked + .accordion__header .accordion__close-icon {
-        display: block;
     }
 }
