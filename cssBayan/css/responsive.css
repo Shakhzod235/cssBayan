@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
     body {
-        font-family: Roboto, Noto, sans-serif;
+        font-family: Roboto, Noto, 'Overpass', Arial, Helvetica, sans-serif;
     }
     .container {
         margin: 0 auto;
@@ -64,7 +64,7 @@
 }
 @media (min-width: 820px) {
     body {
-        font-family: Roboto, Noto, sans-serif;
+        font-family: Roboto, Noto, 'Overpass', Arial, Helvetica, sans-serif;
     }
     .container {
         padding: 0 2.5rem;
